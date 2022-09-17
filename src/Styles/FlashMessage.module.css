@@ -1,0 +1,57 @@
+
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.message {
+    background-color: #343434;
+    height: 40px;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    animation: transicao 0.7s ease-in-out;
+    border: 1px solid rgb(61, 170, 213);
+}
+
+.message svg {
+  
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message svg:nth-child(1) {
+    margin-right: 10px;
+    font-size: 25px;
+    background-color: rgb(61, 170, 213);
+}
+
+.close {
+    margin-left: 10px;
+    color: rgb(61, 170, 213);
+    font-size: 25px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+@keyframes transicao {
+   from {
+    opacity: 0;
+   }
+   to {
+    opacity: 1;
+   } 
+}
+
